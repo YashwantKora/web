@@ -36,5 +36,14 @@ document.getElementById("mySubmit").onclick = function(){
     username = document.getElementById("myText").value;
     username = username.toUpperCase();
     console.log(username);
-    document.getElementById("myH1").textContent = "Hello, " + username + "!";
+    document.getElementById("myH1").textContent = `Hello ${username}!`;
+}
+let age;
+let beforeAgeType;
+document.getElementById("submit1").onclick = function(){
+    age = document.getElementById("input1").value;
+    beforeAgeType = typeof age;
+    age = Number(age);
+    document.getElementById("p1").textContent = `Type of data before conversion: ${beforeAgeType}`;
+    document.getElementById("p2").textContent = `Type of data after conversion: ${typeof age}`;
 }
