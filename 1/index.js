@@ -27,7 +27,7 @@
 // console.log(typeof online);
 
 
-// let username;
+let username;
 // username = window.prompt("Enter The Username:");
 
 // document.getElementById("myH1").textContent = "Hello " + username + "!";
@@ -38,12 +38,14 @@ document.getElementById("mySubmit").onclick = function(){
     console.log(username);
     document.getElementById("myH1").textContent = `Hello ${username}!`;
 }
+
 let age;
 let beforeAgeType;
+
 document.getElementById("submit1").onclick = function(){
     age = document.getElementById("input1").value;
     beforeAgeType = typeof age;
-    age = Number(age);
+    afterAgeType = Number(age);
     document.getElementById("p1").textContent = `Type of data before conversion: ${beforeAgeType}`;
-    document.getElementById("p2").textContent = `Type of data after conversion: ${typeof age}`;
+    document.getElementById("p2").textContent = `Type of data after conversion: ${typeof afterAgeType}`;
 }
